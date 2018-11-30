@@ -1,7 +1,7 @@
 # Work with Python 3.6
 import discord
 
-TOKEN = 'TE3NTQ5NjcyMzI0Mzk5MTE0.DuJWuw.wUB1aKcPQPpijsvw-o60AsDc_XM'
+
 
 client = discord.Client()
 
@@ -22,6 +22,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run(TOKEN)
+client.run(process.env.token)
 
 
